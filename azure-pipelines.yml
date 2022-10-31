@@ -61,7 +61,7 @@ stages:
    - deployment: Dev
      displayName: Dev
      environment: 
-       name: 'Dev'    
+       name: 'win'    
        resourceType: VirtualMachine
      variables:
      - name: websitePhysicalPath
@@ -91,7 +91,7 @@ stages:
                               "protocol":"http",
                               "ipAddress":"",
                               "hostname":"",
-                              "port":"80",
+                              "port":"81",
                               "sslThumbprint":"",
                               "sniFlag":false
                           }
