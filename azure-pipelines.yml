@@ -99,7 +99,7 @@ stages:
                               "protocol":"http",
                               "ipAddress":"",
                               "hostname":"",
-                              "port":"81",
+                              "port":"80",
                               "sslThumbprint":"",
                               "sniFlag":false
                           }
