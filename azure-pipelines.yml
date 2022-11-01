@@ -56,12 +56,12 @@ stages:
 - stage: 'Dev'
   displayName: 'Dev'
   dependsOn: 'Build'
-  condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/main'))
+  condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
   jobs:
    - deployment: Dev
      displayName: Dev
      environment: 
-       name: 'win'    
+       name: 'window123'    
        resourceType: VirtualMachine
      variables:
      - name: websitePhysicalPath
@@ -95,7 +95,7 @@ stages:
                               "protocol":"http",
                               "ipAddress":"",
                               "hostname":"",
-                              "port":"90",
+                              "port":"8080",
                               "sslThumbprint":"",
                               "sniFlag":false
                           }
